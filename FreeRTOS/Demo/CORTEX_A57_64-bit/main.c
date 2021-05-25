@@ -55,7 +55,7 @@ int main(void)
 {
 	/* Configure the hardware ready to run */
 	prvSetupHardware();
-
+	mmu_init(0x42000000);
 	uart_puts("Hello World main()!\n");
 	//configASSERT(0);
 
